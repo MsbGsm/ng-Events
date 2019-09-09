@@ -10,7 +10,8 @@ import {
   EventService,
   EventRouteActivator,
   EventListResolver, 
-  CreateSessionComponent} from './events/index';
+  CreateSessionComponent,
+  DurationPipe} from './events/index';
 
 import { EventAppComponent } from './event-app.component';
 import { Error404Component } from './errors/404.component';
@@ -38,7 +39,8 @@ import { SessionListComponent } from './events/event-details/session-list.compon
     SessionListComponent,
     CollapsibleWellComponent,
     Error404Component,
-    NavBarComponent
+    NavBarComponent,
+    DurationPipe
   ],
   imports: [
     BrowserModule,
