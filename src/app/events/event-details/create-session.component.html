@@ -41,7 +41,7 @@
         <em *ngIf="abstract.invalid && abstract.dirty && abstract?.errors.restrictedWords">Resricted words found: {{abstract.errors.restrictedWords}}</em>
         <textarea formControlName="abstract" id="abstract" rows=3 class="form-control" placeholder="abstract..."></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Save</button>
-      <button type="button" class="btn btn-default">Cancel</button>
+      <button type="submit" [disabled]="newSessionForm.invalid" class="btn btn-primary">Save</button>
+      <button type="button" class="btn btn-default" (click)="cancel()">Cancel</button>
     </form>
   </div>
