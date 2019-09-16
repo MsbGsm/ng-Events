@@ -13,7 +13,8 @@ import {
   CreateSessionComponent,
   DurationPipe,
   UpvoteComponent,
-  VoterService} from './events/index';
+  VoterService,
+  LocationValidator} from './events/index';
 
 import { EventAppComponent } from './event-app.component';
 import { Error404Component } from './errors/404.component';
@@ -45,7 +46,8 @@ let jQuery = window['$'];
     NavBarComponent,
     DurationPipe,
     SimpleModalComponent,
-    ModalTriggerDirective
+    ModalTriggerDirective,
+    LocationValidator
   ],
   imports: [
     BrowserModule,
