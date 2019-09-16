@@ -11,7 +11,9 @@ import {
   EventRouteActivator,
   EventListResolver, 
   CreateSessionComponent,
-  DurationPipe} from './events/index';
+  DurationPipe,
+  UpvoteComponent,
+  VoterService} from './events/index';
 
 import { EventAppComponent } from './event-app.component';
 import { Error404Component } from './errors/404.component';
@@ -37,6 +39,7 @@ let jQuery = window['$'];
     CreateEventComponent,
     CreateSessionComponent,
     SessionListComponent,
+    UpvoteComponent,
     CollapsibleWellComponent,
     Error404Component,
     NavBarComponent,
@@ -54,6 +57,7 @@ let jQuery = window['$'];
     EventService,
     EventRouteActivator,
     EventListResolver,
+    VoterService,
     AuthService,
     { 
       provide: TOASTR_TOKEN,
